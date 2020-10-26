@@ -18,7 +18,7 @@ ArregloDinamico::~ArregloDinamico(){
 
 
 
-void ArregloDinamico::insertar_final(const std::string &v){
+void ArregloDinamico::insertar_final(const string &v){
     if(cont == tam){
         // Expandir
         expandir();
@@ -30,7 +30,7 @@ void ArregloDinamico::insertar_final(const std::string &v){
 
 
 
-void ArregloDinamico::insertar_inicio(const std::string &v){
+void ArregloDinamico::insertar_inicio(const string &v){
     if(cont == tam){
         // Expandir
         expandir();
