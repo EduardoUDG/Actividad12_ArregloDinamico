@@ -1,8 +1,10 @@
 #include "arreglo_dinamico.h"
 
+using namespace std;
+
 ArregloDinamico::ArregloDinamico(){
     // Crea el arreglo
-    arreglo = new int[MAX];
+    arreglo = new string[MAX];
     cont = 0;
     tam = MAX;
 }
@@ -16,7 +18,7 @@ ArregloDinamico::~ArregloDinamico(){
 
 
 
-void ArregloDinamico::insertar_final(int v){
+void ArregloDinamico::insertar_final(const std::string &v){
     if(cont == tam){
         // Expandir
         expandir();
@@ -28,7 +30,7 @@ void ArregloDinamico::insertar_final(int v){
 
 
 
-void ArregloDinamico::insertar_inicio(int v){
+void ArregloDinamico::insertar_inicio(const std::string &v){
     if(cont == tam){
         // Expandir
         expandir();
@@ -48,7 +50,7 @@ size_t ArregloDinamico::size(){
 
 
 void ArregloDinamico::expandir(){
-    int *nuevo = new int[tam+MAX];
+    string *nuevo = new string[tam+MAX];
 
     for(size_t i=0; i<cont; i++){
         nuevo[i] = arreglo[i];

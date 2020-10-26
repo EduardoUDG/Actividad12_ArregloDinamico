@@ -7,7 +7,7 @@ using namespace std;
 
 class ArregloDinamico{
     private:
-        int *arreglo;
+        string *arreglo;
         size_t tam;
         size_t cont;
         // MAX representa el tamaño maximo inicial de nuestro arreglo
@@ -18,12 +18,12 @@ class ArregloDinamico{
         ArregloDinamico();
         ~ArregloDinamico();
 
-        void insertar_final(int v);
-        void insertar_inicio(int v);
+        void insertar_final(const std::string &v);
+        void insertar_inicio(const std::string &v);
         size_t size();
 
         // Sobrecargar Operador []
-        int operator[](size_t p){ return arreglo[p]; }
+        string operator[](size_t p){ return arreglo[p]; }
 
     private:
         // Metodo privado
