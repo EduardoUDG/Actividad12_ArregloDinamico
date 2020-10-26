@@ -8,21 +8,33 @@ using namespace std;
 
 int main(){
     ArregloDinamico arre;
+    cout<<endl<<endl;
 
-    arre.insertar_final("a");
-    arre.insertar_final("b");
-    arre.insertar_final("c");
-    arre.insertar_final("d");
-    arre.insertar_final("e");
-    arre.insertar_final("f");
-    arre.insertar_final("g");
-    arre.insertar_final("h");
-    arre.insertar_inicio("i");
-    arre.insertar_inicio("j");
 
-    for (size_t i=0; i<arre.size(); i++){
-        cout<<arre[i]<<" ";
-    }
+    arre.insertar_final("alex");
+    arre.insertar_final("beto");
+    arre.insertar_final("carlos");
+    arre.insertar_final("daniel");
+    arre.insertar_final("erick");
+    arre.insertar_final("franco");
+    arre.insertar_final("gerardo");
+    arre.insertar_final("hector");
+
+
+
+    for (size_t i=0; i<arre.size(); i++){ cout<<arre[i]<<" | "; }
+
+
+
+    cout<<endl;
+    arre.insertar_inicio("ilario");
+    arre.insertar_inicio("juan");
+    for(size_t i=0; i<80; i++){ cout<<"-"; }
+    cout<<endl;
+
+
+
+    for (size_t i=0; i<arre.size(); i++){ cout<<arre[i]<<" | "; }
 
 
     getch();

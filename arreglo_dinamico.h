@@ -11,7 +11,7 @@ class ArregloDinamico{
         size_t tam;
         size_t cont;
         // MAX representa el tamaño maximo inicial de nuestro arreglo
-        const static size_t MAX = 5;
+        const static size_t MAX = 10;
 
     public:
         // Constructor y Destructor
